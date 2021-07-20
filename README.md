@@ -12,23 +12,23 @@ This project is an inquiry of what can be done (and what you give up) with compu
 
 Due diligence for any cloud project starts with setting a budget to limit resource usage overflow. Always be sure to consistently change the AWS region to what is physically closest (as seen in the top right of the dashboard). Create a cost budget, giving adequate notification metrics. It is recommended that an email notification would be sent after 75% of the indicated budget. Below is a screenshot of the budget I created.
 
-![budget](C:\Users\lukep\Desktop\Projects\UVA Engineering Items\4740 Cloud\pa2\img\pa2-budget.png)
+![pa2-budget](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-budget.png)
 
 ### Strategy
 
 Using an EC2 VM instance, create a bash script that runs a python auto grading file. See the following two files for how the shell file operated along side the auto grade file.
 
-![pa2-program](C:\Users\lukep\Desktop\Projects\UVA Engineering Items\4740 Cloud\pa2\img\pa2-program.png)
+![pa2-program](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-program.png)
 
-![pa2-autograde](C:\Users\lukep\Desktop\Projects\UVA Engineering Items\4740 Cloud\pa2\img\pa2-autograde.png)
+![pa2-autograde](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-autograde.png)
 
 ### Ajax
 
 Flask was used to create a simple web application to subtract two numbers an immediately return the result. Wholistic implementations of this project would involve running the auto grade python file from the flask application, rather than a simple subtract function. 
 
-![pa2-ajax-1](C:\Users\lukep\Desktop\Projects\UVA Engineering Items\4740 Cloud\pa2\img\pa2-ajax-1.png)
+![pa2-ajax-1](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-ajax-1.png)
 
-![pa2-ajax-2](C:\Users\lukep\Desktop\Projects\UVA Engineering Items\4740 Cloud\pa2\img\pa2-ajax-2.png)
+![pa2-ajax-2](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-ajax-2.png)
 
 ### Docker
 

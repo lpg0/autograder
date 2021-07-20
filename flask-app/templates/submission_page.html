@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+		<script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type=text/javascript>
+		$("button").click(function (e) {
+			e.preventDefault();
+			var value_n1 = $("#n1").val();
+			var value_n2 = $("#n2").val();
+			alert(value_n1);
+			alert(value_n2);
+			$.ajax({
+				type: "POST",
+				url: "http://44.192.91.220:8888/submission",
+				data: JSON.stringify({ "n1" : value_n1, "n2": value_n2 }),
+				contentType: "application/json; charset=utf-8",
+				dataType: "json",
+				success: function (data) {
+					alert(JSON.stringify(data));
+				}
+			});
+		});
+	</script>	
+	</head>
+	<body style="background-color: #eee">
+		<div class="mui-col-sm" style="padding: 50px;">
+		<div class="mui-panel">
+			<form class="mui-form" name="entry" id="entry" method = "POST">
+			<legend>Autograding System (Subtract)</legend>
+			<p>This system subtracts the first and second number, respectively. Click 'submit' to print the calculation.</p>
+			<div class="mui-textfield">
+				<label for="n1">Enter the first number:</label>
+				<input type="text" id="n1" name="n1" minlength="1">
+			</div>
+			<div class="mui-textfield">
+				<label for="n2">Enter the second number:</label>
+				<input type="text" id="n2" name="n2" minlength="1">
+			</div>
+			<button type = "submit" class="mui-btn mui-btn--raised mui-btn--primary">Submit</button>
+		</form>
+		{% if result %}
+		<textarea style="display: block; font: 1rem 'Fira Sans', sans-serif;" cols="25" rows="4" name="result">{{result}}</textarea>
+		{% endif %}
+		</div>
+		</div>
+	</body>
+</html>

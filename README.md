@@ -20,15 +20,15 @@ Using an EC2 VM instance, create a bash script that runs a python auto grading f
 
 ![pa2-program](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-program.png)
 
-![pa2-autograde](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-autograde.jpg)
+![pa2-autograde](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-autograde.png)
 
 ### Ajax
 
 Flask was used to create a simple web application to subtract two numbers an immediately return the result. Wholistic implementations of this project would involve running the auto grade python file from the flask application, rather than a simple subtract function. 
 
-![pa2-ajax-1](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-ajax-1.jpg)
+![pa2-ajax-1](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-ajax-1.png)
 
-![pa2-ajax-2](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-ajax-2.jpg)
+![pa2-ajax-2](https://raw.githubusercontent.com/lpg0/autograder/main/img/pa2-ajax-2.png)
 
 ### Docker
 

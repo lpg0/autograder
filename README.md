@@ -1,4 +1,4 @@
-# 🏫 Autograder
+# 📚 Autograder
 
 ### Goals 
 
